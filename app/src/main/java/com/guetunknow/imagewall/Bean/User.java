@@ -1,11 +1,20 @@
 package com.guetunknow.imagewall.Bean;
 
 public class User {
+    private String uid;     //用户标识，让数据库自动生成，不能让用户修改
     private String email;
     private String user_name;
     private String password;
 
     public User() {
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public User(String email, String user_name, String password) {
