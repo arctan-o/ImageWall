@@ -55,7 +55,6 @@ public class RegisterActivity extends AppCompatActivity {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
-
                             User lihei = new User(email,name,password);
                             new UserDao().add(lihei);
                         }
